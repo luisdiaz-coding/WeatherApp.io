@@ -24,7 +24,7 @@ console.log(searchbox.value);
 
 function getResults (query) {
 
- fetch(`http://api.openweathermap.org/data/2.5/weather?q=${query}&appid=${api.key}&units=metric`)
+ fetch(`https://api.openweathermap.org/data/2.5/weather?q=${query}&appid=${api.key}&units=metric`)
   .then(weather => {
           return weather.json();  ///Http Request 
   }) .then(displayResults);
